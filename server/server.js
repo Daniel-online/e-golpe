@@ -14,9 +14,10 @@ const port = 3000;
 app.use(cors());
 app.use(morgan("common"));
 app.use(helmet());
-app.use(routes);
 app.use(express.json());
+app.use(routes);
 
+app.use(express.urlencoded({ extended: true }));
 app.listen(port, ()=>{
     console.log("test");
     dbConnect();

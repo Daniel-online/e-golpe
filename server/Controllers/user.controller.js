@@ -1,28 +1,21 @@
-import userModel from "../models/user.model";
-//registerer
+import {updateUser} from "./../Services/user.service.js"
 
-export const register = async(req, res) =>{
+
+export const updateUserController = async(req, res)=>{
     try {
-        const newUser = userModel({
-            userName: "Teste",
-            password: "*******",
-            email:"teste@testmail.com",
-            address: "Nowhere"
-        });
-
-        await newUser();
-
-        res.status(200).json({
-            newUser,
-            message: "Usuario cadastrado com sucesso"
-        })
-
+        const user = await updateUser(req.params.id, req.body)
+        console.log("usuario atualizado")
+        res.status(200).json({user, message:"Usuario atualizado com sucesso!"})
     } catch (error) {
-        res.status(500).json({
-            error: error,
-            message: "Registro nao foi possivel de ser completado..."
-        })
-        console.log(error)
-
+        console.log(error);
+        res.status(500).json(error)
     }
 }
+
+export const getUserController = async(req, res)=>{
+  res.status(200).json("GET works")
+}
+
+export const deleteUserController = async(req, res)=>{
+    res.status(200).json("DELETE works")
+  }

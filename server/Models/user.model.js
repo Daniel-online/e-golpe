@@ -35,7 +35,25 @@ const userSchema = new Schema({
     coverPicture:{
         type: String,
         default:""
-    }
+    },
+    isAdmin:{
+        type:Boolean,
+        default: false
+    },
+    bio:{
+        type:String,
+        default:""
+    },
+    from:{
+        type: String,
+        default:""
+    },
+    relationship:{
+        type: Number,
+        enum:[1,2,3]
+    },
+    
+
 });
 
 export default mongoose.model("User", userSchema);
