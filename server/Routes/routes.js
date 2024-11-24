@@ -6,7 +6,7 @@ const router = express.Router();
 
 const baseURL = "api/v1";
 
-router.use(`/${baseURL}/users`, userRoutes);
+router.use(`/${baseURL}/user`, userRoutes);
 router.use(`/${baseURL}/auth`, authRoutes)
 
 export default router;
