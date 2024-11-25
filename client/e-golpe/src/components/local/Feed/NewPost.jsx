@@ -44,7 +44,7 @@ const NewPost = () => {
               <CustomFileInput value={"file"} type={"Arquivo"} />
             </button>
 
-            <input className="flex items-center justify-center py-px h-8 w-16 rounded-lg bg-indigo-600 hover:text-yellow-400 hover:cursor-pointer" type="submit" value="Enviar"></input>
+            <input className="flex items-center justify-center py-px h-8 w-16 rounded-lg bg-indigo-600 hover:text-orange-400 hover:cursor-pointer" type="submit" value="Enviar"></input>
           </ul>
 
         </div>

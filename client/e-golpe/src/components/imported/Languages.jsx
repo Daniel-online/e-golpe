@@ -17,7 +17,7 @@ const Languages = () => {
                     <RiNodejsLine className="text-5xl text-lime-600" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiJavascriptLine className="text-5xl text-yellow-500" />
+                    <RiJavascriptLine className="text-5xl text-orange-500" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
                     <DiJava className="text-5xl text-red-600" />

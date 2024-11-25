@@ -17,7 +17,7 @@ const Navbar = () => {
 
       </div>
       <div className="Right flex items-center place-content-evenly px-px mr-6">
-        <div className="mr-2 px-px text-yellow-400 tabIcons flex place-content-evenly space-x-2 items-center "style={{flex:4}}>
+        <div className="mr-2 px-px text-orange-400 tabIcons flex place-content-evenly space-x-2 items-center "style={{flex:4}}>
 
            <a href="" className="font-semibold"> <GoPerson className="text-white h-6 w-6"/>Feed</a>
            <a href="" className="font-semibold"> <IoChatbubblesOutline className="text-white h-6 w-6"/>Chat</a>

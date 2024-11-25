@@ -3,10 +3,10 @@ import postImage2 from "./../assets/post/bulldog.webp";
 import postImage3 from "./../assets/post/dogue-de-bordeaux.webp";
 import postImage4 from "./../assets/post/poodle.webp";
 
-import userImage1 from "./../assets/post/terrier-australiano.webp";
-import userImage2 from "./../assets/post/pastor-catalao.webp";
-import userImage3 from "./../assets/post/saluki.webp";
-import userImage4 from "./../assets/post/spitz.webp";
+import userImage1 from "./../assets/users/1.png";
+import userImage2 from "./../assets/users/2.png";
+import userImage3 from "./../assets/users/3.png";
+import userImage4 from "./../assets/users/4.png";
 
 export const Array = [
   {
