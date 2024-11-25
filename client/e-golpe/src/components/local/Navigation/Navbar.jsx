@@ -3,8 +3,7 @@ import { IoChatbubblesOutline } from "react-icons/io5";
 import { GoPerson } from "react-icons/go";
 import SearchBar from "./SearchBar"
 import { IoNotificationsOutline } from "react-icons/io5";
-import profilePic from "./../../../assets/profilePic.jpeg";
-
+import { LiaDoorOpenSolid } from "react-icons/lia";
 
 const Navbar = () => {
   return (
@@ -25,11 +24,8 @@ const Navbar = () => {
            <a href="" className="font-semibold"> <GoPerson className="text-white h-6 w-6"/>Feed</a>
            <a href="" className="font-semibold"> <IoChatbubblesOutline className="text-white h-6 w-6"/>Chat</a>
            <a href="" className="font-semibold"> <IoNotificationsOutline className="text-white h-6 w-6"/>Alertas</a>
-
+           <a href="/auth" className="font-semibold"><LiaDoorOpenSolid className="text-white h-6 w-6 hover:text-red-600"/>Logout</a>
           
-        </div>
-        <div className="profilePic">
-         <a href=""> <img src={profilePic} alt="User Profile Picture" className="w-8 h-8 rounded-full"></img></a>
         </div>
       </div>
     </nav>
