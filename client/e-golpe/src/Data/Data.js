@@ -1,12 +1,12 @@
-import postImage1 from "./../assets/post/postImage1.jpg";
-import postImage2 from "./../assets/post/postImage2.jpg";
-import postImage3 from "./../assets/post/postImage3.jpg";
-import postImage4 from "./../assets/post/postImage4.jpg";
+import postImage1 from "./../assets/post/bobtail.webp";
+import postImage2 from "./../assets/post/bulldog.webp";
+import postImage3 from "./../assets/post/dogue-de-bordeaux.webp";
+import postImage4 from "./../assets/post/poodle.webp";
 
-import userImage1 from "./../assets/users/userImage1.jpg";
-import userImage2 from "./../assets/users/userImage2.jpg";
-import userImage3 from "./../assets/users/userImage3.jpg";
-import userImage4 from "./../assets/users/userImage4.jpg";
+import userImage1 from "./../assets/post/terrier-australiano.webp";
+import userImage2 from "./../assets/post/pastor-catalao.webp";
+import userImage3 from "./../assets/post/saluki.webp";
+import userImage4 from "./../assets/post/spitz.webp";
 
 export const Array = [
   {

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useRef, useState } from "react";
 
-const CustomFileInput = ({type}) => {
+const CustomFileInput = ({type, value}) => {
   const fileInputRef = useRef(null);
   const [fileName, setFileName] = useState("");
 
@@ -22,7 +22,7 @@ const CustomFileInput = ({type}) => {
       {/* Hidden File Input */}
       <input
         ref={fileInputRef}
-        type="file"
+        type={value}
         className="hidden"
         onChange={handleFileChange}
       />
@@ -30,7 +30,7 @@ const CustomFileInput = ({type}) => {
       {/* Custom Button */}
       <button
         onClick={handleFileClick}
-        className="ring-1 ring-cyan-500 bg-white text-cyan-500 py-2 px-4 rounded-lg cursor-pointer hover:text-white hover:bg-cyan-600"
+        className="ring-1 ring-indigo-500 bg-white text-indigo-500 py-2 px-4 rounded-lg cursor-pointer hover:text-white hover:bg-indigo-600"
       >
         {type}
       </button>
@@ -41,6 +41,7 @@ const CustomFileInput = ({type}) => {
   );
 };
 CustomFileInput.propType={
-  type:PropTypes.string
+  type:PropTypes.string,
+  value:PropTypes.string.isRequired
 }
 export default CustomFileInput;

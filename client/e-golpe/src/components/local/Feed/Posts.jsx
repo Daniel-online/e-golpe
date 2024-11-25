@@ -1,8 +1,7 @@
 import { MdOutlineMoreVert } from "react-icons/md";
 import AlertButton from "./AlertButton"
-import { LuSiren } from "react-icons/lu";
-import { FaPersonFallingBurst } from "react-icons/fa6";
-import { useState } from "react";
+import { LuDog } from "react-icons/lu";
+import { TbBone } from "react-icons/tb";import { useState } from "react";
 import PropTypes from 'prop-types';
 import {Users} from "../../../Data/Data.js"
 
@@ -12,9 +11,9 @@ const Posts = ({ post }) => {
   let [isVoted, setIsVoted] = useState(false)
   const user = Users.find((user) => user.id === post?.userId);
   const handleUpvote = ()=>{
- 
-        if(isVoted){
-          setUpvote(upVote = upVote +1)
+
+        if(isVoted==true){
+            setUpvote(upVote = upVote +1)
         }else{
           setIsVoted(!isVoted)
         }
@@ -35,7 +34,7 @@ const Posts = ({ post }) => {
             {user ? user.username : "Unknown User"}
             </span>
             <span className="text-xs font-light ">
-              {post.date} minutos
+              {post.date} 
             </span>
           </div>
           <div className="smallerButtons pr-2 py-2 py-px flex items-center">
@@ -47,23 +46,23 @@ const Posts = ({ post }) => {
           <span className=" grid px-2 py-2 border-1 border-transparent border-spacing-2 border-spacing-x-2">
             {post.desc}
           </span>
-          <img src={post.photo} alt="place-content-center Post image" className=" rounded-lg h-64 w-full object-contain hover:h-max-[500]"></img>
+          <img src={user.profilePicture} alt="place-content-center Post image" className=" rounded-lg h-64 w-full object-contain hover:h-max-[500]"></img>
 
         </div>
         <div className="interaction">
           <div className="buttons flex flex-row justify-between">
             <ul className="flex space-x-2 border-1 border-transparent py-2 px-2">
               <li>
-                <button className="ring-1 ring-cyan-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-cyan-600 hover:text-white hover:bg-cyan-600" 
+                <button className="ring-1 ring-indigo-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-indigo-600 hover:text-white hover:bg-indigo-600" 
                 onClick={handleUpvote}>
                   <span className="text-xs">{upVote}</span>
-                  <LuSiren />
-                  <span>Importante</span>
+                  <LuDog className="text-xl" />
+                  <span>Amei</span>
                 </button>
               </li>
-              <li> <button className="flex flex-row ring-1 ring-cyan-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-cyan-600 hover:text-white hover:bg-cyan-600">
-                <FaPersonFallingBurst className="text-xl" />
-                <span >Caí Nessa </span>
+              <li> <button className="flex flex-row ring-1 ring-indigo-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-indigo-600 hover:text-white hover:bg-indigo-600">
+                <TbBone className="text-xl" />
+                <span >Quero Ajudar</span>
               </button>
               </li>
             </ul>

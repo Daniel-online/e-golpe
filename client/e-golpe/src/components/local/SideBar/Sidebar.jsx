@@ -1,38 +1,38 @@
 import { RiNumbersFill } from "react-icons/ri";
-import { TbCategory } from "react-icons/tb";
+// import { TbCategory } from "react-icons/tb";
 import { LuTags } from "react-icons/lu";
 import { IoSchoolSharp } from "react-icons/io5";
+import  SearchBar from "./../Navigation/SearchBar"
+
 const Sidebar = () => {
   return (
     <div className=" text-white h-screen w-1/5 py-px space-y-3">
-      <div className="shadow-lg bg-cyan-600 rounded-lg border-transparent border-8 text-xl">
+      <div className="searchBar">
+        <SearchBar />
+      </div>
+      <div className="shadow-lg bg-indigo-600 rounded-lg border-transparent border-8 text-xl">
         <ul className="flex-column items-center ">
           <li className="flex items-center gap-2 py-3">
             <a href="" className="flex gap-2 hover:text-yellow-400">
               <RiNumbersFill />
-              <span> Top 10 da Semana</span>
-            </a>
-          </li>
-          <li className="flex gap-2 items-center py-3">
-            <a href="" className="flex gap-2 hover:text-yellow-400">
-              <TbCategory /><span>Categorias</span>
+              <span> Recem Adicionados</span>
             </a>
           </li>
           <li className="flex gap-2 items-center py-3">
             <a href="" className="flex gap-2 hover:text-yellow-400">
               <LuTags />
-              <span> Tags</span>
+              <span>Mapa</span>
             </a>
           </li>
           <li className="flex gap-2 items-center py-3">
             <a href="" className="flex gap-2 hover:text-yellow-400">
               <IoSchoolSharp />
-              <span>Educação</span>
+              <span>Tutorial</span>
             </a>
           </li>
         </ul>
       </div>
-      <div className="shadow-lg bg-cyan-600 rounded-lg place-content-baseline border-transparent border-8 ">
+      <div className="shadow-lg bg-indigo-600 rounded-lg place-content-baseline border-transparent border-8 ">
         <ul>
           <li className=" hover:text-yellow-400">
             <a href="">Sobre nós</a>
