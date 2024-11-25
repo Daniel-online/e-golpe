@@ -5,32 +5,34 @@ import { IoSchoolSharp } from "react-icons/io5";
 const Sidebar = () => {
   return (
     <div className=" text-white h-screen w-1/5 py-px space-y-3">
-      <div className="bg-cyan-600 rounded-lg border-transparent border-8 text-xl">
+      <div className="shadow-lg bg-cyan-600 rounded-lg border-transparent border-8 text-xl">
         <ul className="flex-column items-center ">
           <li className="flex items-center gap-2 py-3">
-            <a href="" className="gap-2">
+            <a href="" className="flex gap-2">
               <RiNumbersFill />
-             <span> Top 10 da Semana</span>
+              <span> Top 10 da Semana</span>
             </a>
           </li>
-          <li className="flex items-center py-3">
-            <a href="">
-              <TbCategory />Categorias
+          <li className="flex gap-2 items-center py-3">
+            <a  href="" className="flex gap-2">
+              <TbCategory /><span>Categorias</span>
             </a>
           </li>
-          <li className="flex items-center py-3">
-            <a href="">
-              <LuTags />Tags
+          <li className="flex gap-2 items-center py-3">
+            <a  href="" className="flex gap-2">
+              <LuTags />
+              <span> Tags</span>
             </a>
           </li>
-          <li className="flex items-center py-3">
-            <a href="">
-              <IoSchoolSharp />Educação
+          <li className="flex gap-2 items-center py-3">
+            <a  href="" className="flex gap-2">
+              <IoSchoolSharp />
+              <span>Educação</span>
             </a>
           </li>
         </ul>
       </div>
-      <div className="bg-cyan-600 rounded-lg place-content-baseline border-transparent border-8">
+      <div className="shadow-lg bg-cyan-600 rounded-lg place-content-baseline border-transparent border-8">
         <ul>
           <li>Sobre nós</li>
           <li>Fale Conosco</li>
