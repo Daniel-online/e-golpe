@@ -75,9 +75,9 @@ const Posts = ({ post }) => {
            {post.upVote}
           </div>
         </div>
-        <div className="comments space-y-2">
+        {/* <div className="comments space-y-2">
         {post.comments}
-        </div>
+        </div> */}
 
       </div>
 
