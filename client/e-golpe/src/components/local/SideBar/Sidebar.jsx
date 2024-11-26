@@ -18,7 +18,7 @@ const Sidebar = () => {
           <li className="flex items-center gap-2 py-3">
             <a href="" className="flex gap-2 hover:text-orange-400">
               <RiNumbersFill />
-              <span> Recem Adicionados</span>
+              <span> Recém Adicionados</span>
             </a>
           </li>
           <li className="flex gap-2 items-center py-3">
@@ -49,7 +49,7 @@ const Sidebar = () => {
           </li>
 
         </ul>
-        
+
       </div>
     </div>
   )

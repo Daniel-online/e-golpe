@@ -1,10 +1,11 @@
-import { MdOutlineMoreVert } from "react-icons/md";
-import AlertButton from "./AlertButton"
+// import ShareModal from "./../Modal/ShareModal.jsx"
+// import AlertButton from "./AlertButton"
 import { LuDog } from "react-icons/lu";
 import { TbBone } from "react-icons/tb";
 import { useState } from "react";
 import PropTypes from 'prop-types';
 import { Users } from "../../../Data/Data.js"
+import Alert from "../Modal/Alert.jsx";
 
 
 const Posts = ({ post }) => {
@@ -21,6 +22,7 @@ const Posts = ({ post }) => {
 
 
   }
+
   return (
     <div className="feed flex flex-col">
 
@@ -41,10 +43,12 @@ const Posts = ({ post }) => {
             </span>
 
           </div>
+        
+          {/* <div className="smallerButtons pr-2 py-2 py-px flex items-center">
+            
+              <ShareModal/>
 
-          <div className="smallerButtons pr-2 py-2 py-px flex items-center">
-            <button className=""><MdOutlineMoreVert className="text-xl cursor-pointer" /></button>
-          </div>
+          </div> */}
 
         </div>
 
@@ -82,8 +86,8 @@ const Posts = ({ post }) => {
 
             </ul>
 
-            <div className="smallerButtons pr-2 py-2 py-px flex items-center">
-              <AlertButton />
+            <div className="smallerButtons pr-2 py-2 py-px">
+              <Alert />
             </div>
 
           </div>
