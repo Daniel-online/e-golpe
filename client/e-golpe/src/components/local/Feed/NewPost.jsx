@@ -8,7 +8,7 @@ import CustomFileInput from "../Forms/CustomFileInput";
 const NewPost = () => {
   // const fileIcon = CiFileOn;
   // const imageIcon = ImImage;
-  const fraseTextBox = "Quem passou a perna em você hoje?";
+  const fraseTextBox = "Adicione seu item aqui!";
 
   //
   return (
@@ -40,7 +40,7 @@ const NewPost = () => {
               <ImImage></ImImage>
               <CustomFileInput type={"Local"}/>
             </button>
-            <input className="flex items-center justify-center py-px h-8 w-16 rounded-lg bg-cyan-600 hover:text-yellow-400 hover:cursor-pointer" type="submit" value="Enviar"></input>
+            <input className="flex items-center justify-center py-px h-8 w-16 rounded-lg bg-green-600 hover:text-white-400 hover:cursor-pointer" type="submit" value="Enviar"></input>
           </ul>
 
         </div>

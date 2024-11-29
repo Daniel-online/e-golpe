@@ -11,13 +11,13 @@ const Languages = () => {
             </h2>
             <div className="ml-3 flex flex-row flex-wrap items-center jusitfy-center gap-4">
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine className="text-5xl text-cyan-600" />
+                    <RiReactjsLine className="text-5xl text-green-600" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
                     <RiNodejsLine className="text-5xl text-lime-600" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiJavascriptLine className="text-5xl text-yellow-500" />
+                    <RiJavascriptLine className="text-5xl text-white-500" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
                     <DiJava className="text-5xl text-red-600" />

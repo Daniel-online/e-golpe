@@ -54,14 +54,14 @@ const Posts = ({ post }) => {
           <div className="buttons flex flex-row justify-between">
             <ul className="flex space-x-2 border-1 border-transparent py-2 px-2">
               <li>
-                <button className="ring-1 ring-cyan-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-cyan-600 hover:text-white hover:bg-cyan-600" 
+                <button className="ring-1 ring-green-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-green-600 hover:text-white hover:bg-green-600" 
                 onClick={handleUpvote}>
                   <span className="text-xs">{upVote}</span>
                   <LuSiren />
                   <span>Importante</span>
                 </button>
               </li>
-              <li> <button className="flex flex-row ring-1 ring-cyan-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-cyan-600 hover:text-white hover:bg-cyan-600">
+              <li> <button className="flex flex-row ring-1 ring-green-600 flex items-center justify-center py-2 px-2 h-10 w-30 rounded-lg text-green-600 hover:text-white hover:bg-green-600">
                 <FaPersonFallingBurst className="text-xl" />
                 <span >Caí Nessa </span>
               </button>

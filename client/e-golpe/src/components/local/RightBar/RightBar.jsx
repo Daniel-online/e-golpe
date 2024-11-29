@@ -2,6 +2,7 @@ import { LiaAdSolid } from "react-icons/lia";
 const RightBar = () => {
   return (
     <div className="ads shadow-lg wrapper bg-white border-s border-slate-300 rounded-lg items-center w-1/6">
+      
       <h2 className="px-2 py-2 items-center">
         ANUNCIE AQUI
       </h2>
